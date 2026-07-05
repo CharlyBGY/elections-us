@@ -1,0 +1,17 @@
+{
+  "name": "U.S. Elections",
+  "short_name": "US Elections",
+  "description": "Tracking American elections: the 2026 midterms, the road to the 2028 presidential race, polls, race ratings, interactive maps and scenario builders.",
+  "lang": "en",
+  "start_url": ".",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#FFFFFF",
+  "background_color": "#F4F4F4",
+  "icons": [
+    { "src": "pwa-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "pwa-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
