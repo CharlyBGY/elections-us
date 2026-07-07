@@ -2,3 +2,13 @@ node_modules
 dist
 .DS_Store
 *.local
+
+# Capacitor : assets web copiés à chaque `cap sync` et sorties de build natives
+android/app/src/main/assets/public
+android/app/build
+android/build
+android/.gradle
+ios/App/App/public
+ios/App/Pods
+ios/App/output
+ios/DerivedData

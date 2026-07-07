@@ -1,0 +1,52 @@
+{
+  "generatedAt": "2026-07-05T09:06:06.533Z",
+  "updated": "July 4, 2026",
+  "midterms": {
+    "date": "2026-11-03"
+  },
+  "approval": {
+    "president": "Donald Trump",
+    "approve": 41,
+    "disapprove": 55
+  },
+  "genericBallot": {
+    "D": 47,
+    "R": 41
+  },
+  "controlOdds": {
+    "house": {
+      "D": 72,
+      "R": 28
+    },
+    "senate": {
+      "D": 31,
+      "R": 69
+    }
+  },
+  "senate": {
+    "composition": {
+      "R": 53,
+      "D": 47
+    },
+    "tossups": [
+      "GA",
+      "ME",
+      "OH"
+    ]
+  },
+  "governors": {
+    "tossups": [
+      "GA",
+      "MI",
+      "AZ",
+      "WI",
+      "NV"
+    ]
+  },
+  "headline": "Four months to the midterms",
+  "nextEvent": {
+    "date": "Aug 4, 2026",
+    "iso": "2026-08-04",
+    "event": "Primaries in Arizona, Michigan, Kansas, Missouri and Washington"
+  }
+}

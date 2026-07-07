@@ -16,6 +16,32 @@ self.addEventListener("activate", (event) => {
   );
 });
 
+// ─ Notifications push (Web Push standard, prêt pour un service d'envoi type Firebase/OneSignal) ─
+self.addEventListener("push", (event) => {
+  let data = {};
+  try { data = event.data ? event.data.json() : {}; } catch { data = { body: event.data && event.data.text() }; }
+  const title = data.title || "US Elections";
+  event.waitUntil(self.registration.showNotification(title, {
+    body: data.body || "",
+    icon: "pwa-192.png",
+    badge: "pwa-192.png",
+    data: { url: data.url || "./" },
+  }));
+});
+
+self.addEventListener("notificationclick", (event) => {
+  event.notification.close();
+  const url = new URL((event.notification.data && event.notification.data.url) || "./", self.location.href).href;
+  event.waitUntil(
+    clients.matchAll({ type: "window", includeUncontrolled: true }).then((list) => {
+      for (const c of list) {
+        if (c.url === url && "focus" in c) return c.focus();
+      }
+      return clients.openWindow(url);
+    })
+  );
+});
+
 self.addEventListener("fetch", (event) => {
   const req = event.request;
   if (req.method !== "GET") return;
