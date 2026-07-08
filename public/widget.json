@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-07-05T09:06:06.533Z",
-  "updated": "July 4, 2026",
+  "generatedAt": "2026-07-08T06:30:57.143Z",
+  "updated": "July 8, 2026",
   "midterms": {
     "date": "2026-11-03"
   },
   "approval": {
     "president": "Donald Trump",
-    "approve": 41,
-    "disapprove": 55
+    "approve": 39,
+    "disapprove": 57
   },
   "genericBallot": {
-    "D": 47,
-    "R": 41
+    "D": 46,
+    "R": 42
   },
   "controlOdds": {
     "house": {
-      "D": 72,
-      "R": 28
+      "D": 84,
+      "R": 16
     },
     "senate": {
-      "D": 31,
-      "R": 69
+      "D": 45,
+      "R": 55
     }
   },
   "senate": {
@@ -31,7 +31,8 @@
     "tossups": [
       "GA",
       "ME",
-      "OH"
+      "OH",
+      "AK"
     ]
   },
   "governors": {
@@ -43,7 +44,7 @@
       "NV"
     ]
   },
-  "headline": "Four months to the midterms",
+  "headline": "Ossoff opens a 13-point lead in Georgia",
   "nextEvent": {
     "date": "Aug 4, 2026",
     "iso": "2026-08-04",
