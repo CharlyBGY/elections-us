@@ -6,7 +6,7 @@
 //  Politico, 270toWin). Valeur indicative. Contenu affiché : anglais.
 // ═══════════════════════════════════════════════════════════════════
 
-export const UPDATED = "July 8, 2026";
+export const UPDATED = "July 17, 2026";
 
 export const PARTIES = {
   D: { label: "Democrats", color: "#2B5F9E" },
@@ -33,9 +33,9 @@ export const MIDTERMS_DATE = "2026-11-03";
 // ─ Popularité du président ─
 export const APPROVAL = {
   president: "Donald Trump",
-  approve: 39,
+  approve: 40,
   disapprove: 57,
-  source: "Average of national surveys (Silver Bulletin), July 8, 2026",
+  source: "Average of national surveys (Silver Bulletin), July 16, 2026",
 };
 
 export const APPROVAL_TREND = [
@@ -45,14 +45,14 @@ export const APPROVAL_TREND = [
   { wave: "Apr 26", Approve: 42, Disapprove: 54 },
   { wave: "May 26", Approve: 42, Disapprove: 54 },
   { wave: "Jun 26", Approve: 41, Disapprove: 55 },
-  { wave: "Jul 26", Approve: 39, Disapprove: 57 },
+  { wave: "Jul 26", Approve: 40, Disapprove: 57 },
 ];
 
 // ─ Bulletin générique du Congrès ─
 export const GENERIC = {
-  D: 46,
-  R: 42,
-  source: "Average of generic-ballot surveys (Morning Consult tracker), July 2026",
+  D: 48,
+  R: 43,
+  source: "Average of generic-ballot surveys (RealClearPolling), July 15, 2026",
 };
 
 export const GENERIC_TREND = [
@@ -62,16 +62,16 @@ export const GENERIC_TREND = [
   { wave: "Apr 26", D: 46, R: 41 },
   { wave: "May 26", D: 47, R: 42 },
   { wave: "Jun 26", D: 47, R: 41 },
-  { wave: "Jul 26", D: 46, R: 42 },
+  { wave: "Jul 26", D: 48, R: 43 },
 ];
 
-export const POLLS_NOTE = "National polling averages as of July 8, 2026, entered by hand for reference only. Typical margin of error: 2 to 4 points.";
+export const POLLS_NOTE = "National polling averages as of July 15, 2026, entered by hand for reference only. Typical margin of error: 2 to 4 points.";
 
 // ─ Probabilités de contrôle du Congrès (marchés prédictifs, saisies à la main) ─
 export const CONTROL_ODDS = {
   house: { D: 84, R: 16 },
   senate: { D: 45, R: 55 },
-  source: "Polymarket, July 7, 2026",
+  source: "Polymarket, July 17, 2026",
 };
 
 // ═══ 2026 MIDTERMS ═══
@@ -89,21 +89,22 @@ export const SENATE = {
   races: [
     { state: "Georgia", code: "GA", holder: "D", type: "Incumbent", rating: "Toss-up", matchup: "Jon Ossoff (D) vs. Mike Collins (R)", note: "The only Democratic incumbent in a state Trump carried in 2024. Rep. Mike Collins won the Republican nomination — and the first general-election poll handed Ossoff a double-digit lead.",
       poll: { entries: [{ name: "Ossoff", party: "D", pct: 56 }, { name: "Collins", party: "R", pct: 43 }], pollster: "Fox News", date: "late June 2026" } },
-    { state: "Maine", code: "ME", holder: "R", type: "Incumbent", rating: "Toss-up", matchup: "Susan Collins (R) vs. Graham Platner (D)", note: "Oyster farmer and political outsider Graham Platner won the Democratic primary in a landslide after Gov. Janet Mills suspended her campaign. Polls give Democrats the edge in the state Harris carried — but Platner's personal controversies make the race volatile." },
+    { state: "Maine", code: "ME", holder: "R", type: "Incumbent", rating: "Toss-up", matchup: "Susan Collins (R) vs. Democratic nominee (to be chosen)", note: "Graham Platner withdrew on July 8 after a woman accused him of sexual assault, an allegation he denies; national Democrats had warned they would not fund the race if he stayed on the ballot. Maine Democrats will pick a replacement at a nominating convention on July 25 in Bangor; declared contenders include Nirav Shah, Shenna Bellows and Troy Jackson, all defeated candidates from the 2026 governor primary." },
     { state: "Ohio", code: "OH", holder: "R", type: "Special", rating: "Toss-up", matchup: "Jon Husted (R) vs. Sherrod Brown (D)", note: "Special election for the seat J.D. Vance vacated. Former Sen. Sherrod Brown attempts a comeback in a state that has moved sharply right. The most expensive race of the cycle.",
       poll: { entries: [{ name: "Husted", party: "R", pct: 47 }, { name: "Brown", party: "D", pct: 45 }], pollster: "Bowling Green State", date: "June 2026" } },
-    { state: "North Carolina", code: "NC", holder: "R", type: "Open seat", rating: "Lean D", matchup: "Roy Cooper (D) vs. Michael Whatley (R)", note: "Thom Tillis is retiring. Popular former Gov. Roy Cooper starts as the favorite against Michael Whatley, former RNC chairman. Democrats' best pickup opportunity.",
-      poll: { entries: [{ name: "Cooper", party: "D", pct: 49 }, { name: "Whatley", party: "R", pct: 43 }], pollster: "Meredith College", date: "June 2026" } },
+    { state: "North Carolina", code: "NC", holder: "R", type: "Open seat", rating: "Lean D", matchup: "Roy Cooper (D) vs. Michael Whatley (R)", note: "Thom Tillis is retiring. Popular former Gov. Roy Cooper starts as the favorite against Michael Whatley, former RNC chairman, though a strong fundraising quarter for Cooper came with a poll showing Whatley narrowing the gap. Democrats' best pickup opportunity.",
+      poll: { entries: [{ name: "Cooper", party: "D", pct: 48 }, { name: "Whatley", party: "R", pct: 44 }], pollster: "Public Policy Polling", date: "July 10-11, 2026" } },
     { state: "Michigan", code: "MI", holder: "D", type: "Open seat", rating: "Lean D", matchup: "Democratic primary (Stevens, McMorrow, El-Sayed) vs. Mike Rogers (R)", note: "Gary Peters is retiring. An open Democratic primary on Aug. 4; Mike Rogers, narrowly defeated in 2024, is running again for Republicans.",
       poll: { entries: [{ name: "Stevens", party: "D", pct: 45 }, { name: "Rogers", party: "R", pct: 43 }], pollster: "EPIC-MRA", date: "June 2026" } },
     { state: "New Hampshire", code: "NH", holder: "D", type: "Open seat", rating: "Lean D", matchup: "Chris Pappas (D) vs. Scott Brown (R)", note: "Jeanne Shaheen is retiring. Rep. Chris Pappas is favored in a state that leans Democratic federally.",
       poll: { entries: [{ name: "Pappas", party: "D", pct: 48 }, { name: "Brown", party: "R", pct: 42 }], pollster: "UNH Survey Center", date: "May 2026" } },
     { state: "Minnesota", code: "MN", holder: "D", type: "Open seat", rating: "Likely D", matchup: "Peggy Flanagan (D) vs. Republican primary winner", note: "Tina Smith is retiring. Minnesota has not elected a Republican senator since 2002." },
-    { state: "Texas", code: "TX", holder: "R", type: "Open seat", rating: "Lean R", matchup: "Ken Paxton (R) vs. James Talarico (D)", note: "Ken Paxton, backed by Trump, crushed Sen. John Cornyn 64–36 in the May 26 runoff; Rep. James Talarico won the Democratic nomination over Jasmine Crockett. Cook and Sabato both downgraded the seat to Lean R — the first post-runoff poll even gave Talarico the edge.",
-      poll: { entries: [{ name: "Talarico", party: "D", pct: 47 }, { name: "Paxton", party: "R", pct: 44 }], pollster: "First post-runoff survey", date: "June 2026" } },
+    { state: "Texas", code: "TX", holder: "R", type: "Open seat", rating: "Lean R", matchup: "Ken Paxton (R) vs. James Talarico (D)", note: "Ken Paxton, backed by Trump, crushed Sen. John Cornyn 64–36 in the May 26 runoff; Rep. James Talarico won the Democratic nomination over Jasmine Crockett. Cook and Sabato both downgraded the seat to Lean R, and a New York Times/Siena poll found the race tied at the end of June.",
+      poll: { entries: [{ name: "Talarico", party: "D", pct: 47 }, { name: "Paxton", party: "R", pct: 47 }], pollster: "New York Times/Siena", date: "June 19-27, 2026" } },
     { state: "Iowa", code: "IA", holder: "R", type: "Open seat", rating: "Likely R", matchup: "Open field after Joni Ernst's retirement", note: "Joni Ernst is not seeking reelection. Democrats hope for a surprise, but the state has trended right since 2016." },
     { state: "Nebraska", code: "NE", holder: "R", type: "Incumbent", rating: "Likely R", matchup: "Pete Ricketts (R) vs. Dan Osborn (independent)", note: "Independent labor leader Dan Osborn tries again after his unexpectedly strong 2024 run." },
-    { state: "Alaska", code: "AK", holder: "R", type: "Incumbent", rating: "Toss-up", matchup: "Dan Sullivan (R) vs. Mary Peltola (D)", note: "Former Rep. Mary Peltola, who won statewide in 2022, jumped into the race — Cook moved the seat to Toss-up on July 1. Ranked-choice voting adds another layer of unpredictability; the latest NYT poll still had Sullivan ahead." },
+    { state: "Alaska", code: "AK", holder: "R", type: "Incumbent", rating: "Toss-up", matchup: "Dan Sullivan (R) vs. Mary Peltola (D)", note: "Former Rep. Mary Peltola, who won statewide in 2022, jumped into the race — Cook moved the seat to Toss-up on July 1. Ranked-choice voting adds another layer of unpredictability.",
+      poll: { entries: [{ name: "Sullivan", party: "R", pct: 47 }, { name: "Peltola", party: "D", pct: 45 }], pollster: "New York Times/Siena", date: "June 15-29, 2026" } },
     { state: "Florida", code: "FL", holder: "R", type: "Special", rating: "Likely R", matchup: "Ashley Moody (R) vs. Democratic challenger", note: "Special election for the seat Marco Rubio vacated. Florida is no longer a swing state." },
     { state: "Kentucky", code: "KY", holder: "R", type: "Open seat", rating: "Solid R", matchup: "The race to succeed Mitch McConnell", note: "After seven terms, Mitch McConnell is retiring. The Republican primary is the real contest." },
     { state: "Illinois", code: "IL", holder: "D", type: "Open seat", rating: "Solid D", matchup: "The race to succeed Dick Durbin", note: "A hard-fought Democratic primary (Stratton, Krishnamoorthi, Kelly) for a safely blue seat." },
@@ -113,13 +114,14 @@ export const SENATE = {
 export const GOVERNORS = {
   seatsUp: 36,
   outlook: "36 of 50 governorships are on the ballot, including about a dozen open seats created by term limits. Control of the states is at stake ahead of redistricting and the 2028 presidential race.",
-  safeD: ["CT", "HI", "IL", "MD", "MA", "NM", "OR", "RI"],
+  safeD: ["CT", "HI", "IL", "MD", "MA", "NM", "RI"],
   safeR: ["AK", "AR", "ID", "IA", "NE", "NH", "OK", "SC", "SD", "TN", "VT", "WY"],
   races: [
-    { state: "Georgia", code: "GA", holder: "R", type: "Open seat", rating: "Toss-up", matchup: "Rick Jackson (R) vs. Keisha Lance Bottoms (D)", note: "Brian Kemp is term-limited. Businessman Rick Jackson beat Trump-endorsed Lt. Gov. Burt Jones in the June 16 runoff; he faces former Atlanta mayor Keisha Lance Bottoms in the South's premier battleground." },
-    { state: "Michigan", code: "MI", holder: "D", type: "Open seat", rating: "Toss-up", matchup: "Jocelyn Benson (D) vs. John James (R) vs. Mike Duggan (ind.)", note: "Gretchen Whitmer is term-limited. Detroit Mayor Mike Duggan's independent bid makes this three-way race unpredictable.",
-      poll: { entries: [{ name: "Benson", party: "D", pct: 40 }, { name: "James", party: "R", pct: 35 }, { name: "Duggan", party: "I", pct: 17 }], pollster: "EPIC-MRA", date: "June 2026" } },
-    { state: "Arizona", code: "AZ", holder: "D", type: "Incumbent", rating: "Toss-up", matchup: "Katie Hobbs (D) vs. GOP primary (Robson, Biggs)", note: "Katie Hobbs, narrowly elected in 2022, defends her seat in a state Trump carried by 5 points in 2024.",
+    { state: "Georgia", code: "GA", holder: "R", type: "Open seat", rating: "Toss-up", matchup: "Rick Jackson (R) vs. Keisha Lance Bottoms (D)", note: "Brian Kemp is term-limited. Businessman Rick Jackson beat Trump-endorsed Lt. Gov. Burt Jones in the June 16 runoff; he faces former Atlanta mayor Keisha Lance Bottoms in a dead heat in the South's premier battleground.",
+      poll: { entries: [{ name: "Jackson", party: "R", pct: 43 }, { name: "Bottoms", party: "D", pct: 43 }], pollster: "Wick Insights", date: "June 27-30, 2026" } },
+    { state: "Michigan", code: "MI", holder: "D", type: "Open seat", rating: "Lean D", matchup: "Jocelyn Benson (D) vs. John James (R)", note: "Gretchen Whitmer is term-limited. Detroit Mayor Mike Duggan ended his independent bid in May, citing his own internal polling and fundraising deficit; the race is now a straight two-way contest, and Cook Political Report moved it to Lean D.",
+      poll: { entries: [{ name: "Benson", party: "D", pct: 46.8 }, { name: "James", party: "R", pct: 41.9 }], pollster: "Average of surveys (RealClearPolling)", date: "July 16, 2026" } },
+    { state: "Arizona", code: "AZ", holder: "D", type: "Incumbent", rating: "Lean D", matchup: "Katie Hobbs (D) vs. GOP primary (Robson, Biggs)", note: "Katie Hobbs, narrowly elected in 2022, defends her seat in a state Trump carried by 5 points in 2024. Cook Political Report moved the race to Lean D on July 11, citing Hobbs's mid-single-digit polling lead and a prediction-market advantage.",
       poll: { entries: [{ name: "Hobbs", party: "D", pct: 44 }, { name: "Robson", party: "R", pct: 44 }], pollster: "Noble Predictive Insights", date: "June 2026" } },
     { state: "Wisconsin", code: "WI", holder: "D", type: "Open seat", rating: "Toss-up", matchup: "Democratic primary (Rodriguez…) vs. Republican primary", note: "Tony Evers is not seeking a third term. The closest state in the nation in 2024 (0.9 points).",
       poll: { entries: [{ name: "Rodriguez", party: "D", pct: 45 }, { name: "Schoemann", party: "R", pct: 43 }], pollster: "Marquette Law School", date: "June 2026" } },
@@ -127,7 +129,8 @@ export const GOVERNORS = {
       poll: { entries: [{ name: "Lombardo", party: "R", pct: 45 }, { name: "Ford", party: "D", pct: 44 }], pollster: "The Nevada Independent", date: "May 2026" } },
     { state: "Kansas", code: "KS", holder: "D", type: "Open seat", rating: "Lean R", matchup: "The race to succeed Laura Kelly (term-limited)", note: "Democrats have held the office since 2018 in a deeply Republican state: a tough hold." },
     { state: "Maine", code: "ME", holder: "D", type: "Open seat", rating: "Lean D", matchup: "The race to succeed Janet Mills (running for Senate)", note: "Janet Mills, term-limited, is running for Senate. Democrats start as favorites." },
-    { state: "Ohio", code: "OH", holder: "R", type: "Open seat", rating: "Likely R", matchup: "Vivek Ramaswamy (R) vs. Amy Acton (D)", note: "Mike DeWine is term-limited. Vivek Ramaswamy, endorsed by Trump, dominates the Republican primary." },
+    { state: "Ohio", code: "OH", holder: "R", type: "Open seat", rating: "Toss-up", matchup: "Vivek Ramaswamy (R) vs. Amy Acton (D)", note: "Mike DeWine is term-limited. Vivek Ramaswamy, endorsed by Trump, dominates the Republican primary, but Acton has steadily closed the gap in polling; Cook Political Report moved the race to Toss-up on July 11 despite prediction markets still favoring Republicans.",
+      poll: { entries: [{ name: "Acton", party: "D", pct: 47.4 }, { name: "Ramaswamy", party: "R", pct: 46.6 }], pollster: "Average of surveys (RealClearPolitics)", date: "July 2026" } },
     { state: "Florida", code: "FL", holder: "R", type: "Open seat", rating: "Likely R", matchup: "Byron Donalds (R) vs. David Jolly (D)", note: "Ron DeSantis is term-limited. Byron Donalds, endorsed early by Trump, is the favorite." },
     { state: "New York", code: "NY", holder: "D", type: "Incumbent", rating: "Likely D", matchup: "Kathy Hochul (D) vs. Elise Stefanik (R)", note: "Elise Stefanik carries the Republican banner in a state her party last won in 2002.",
       poll: { entries: [{ name: "Hochul", party: "D", pct: 52 }, { name: "Stefanik", party: "R", pct: 41 }], pollster: "Siena College", date: "June 2026" } },
@@ -138,6 +141,8 @@ export const GOVERNORS = {
     { state: "Colorado", code: "CO", holder: "D", type: "Open seat", rating: "Solid D", matchup: "Michael Bennet (D) vs. Republican primary winner", note: "Jared Polis is term-limited; Sen. Michael Bennet wants to succeed him." },
     { state: "Texas", code: "TX", holder: "R", type: "Incumbent", rating: "Solid R", matchup: "Greg Abbott (R) vs. Democratic primary winner", note: "Greg Abbott seeks a fourth term, unprecedented since Rick Perry." },
     { state: "Alabama", code: "AL", holder: "R", type: "Open seat", rating: "Solid R", matchup: "Tommy Tuberville (R) vs. Democratic challenger", note: "Sen. Tommy Tuberville is leaving Washington to run for the seat Kay Ivey, term-limited, is vacating." },
+    { state: "Oregon", code: "OR", holder: "D", type: "Incumbent", rating: "Likely D", matchup: "Tina Kotek (D) vs. Christine Drazan (R)", note: "Democratic Gov. Tina Kotek seeks a second term against Republican Christine Drazan, the 2022 nominee, in an unexpectedly competitive race; a phone poll gave Drazan a lead within the margin of error. Cook Political Report downgraded the race from Solid D to Likely D on July 11.",
+      poll: { entries: [{ name: "Drazan", party: "R", pct: 48 }, { name: "Kotek", party: "D", pct: 44 }], pollster: "Public Opinion Strategies", date: "June 22-24, 2026" } },
   ],
 };
 
@@ -151,10 +156,12 @@ export const HOUSE = {
 // ─ Journal des changements de cote (du plus récent au plus ancien) ─
 // contest : "senate" | "governor" | "house"
 export const RATING_CHANGES = [
+  { date: "Jul 11, 2026", contest: "governor", race: "Arizona Governor", from: "Toss-up", to: "Lean D", note: "Cook Political Report cites Katie Hobbs's mid-single-digit polling lead and a prediction-market advantage." },
+  { date: "Jul 11, 2026", contest: "governor", race: "Ohio Governor", from: "Likely R", to: "Toss-up", note: "Cook Political Report moves the race after Amy Acton pulled into a statistical tie with Vivek Ramaswamy, despite prediction markets still favoring Republicans." },
+  { date: "Jul 11, 2026", contest: "governor", race: "Oregon Governor", from: "Solid D", to: "Likely D", note: "Cook Political Report downgrades Gov. Tina Kotek's race after a poll showed Republican Christine Drazan with a lead within the margin of error." },
   { date: "Jul 1, 2026", contest: "senate", race: "Alaska Senate", from: "Likely R", to: "Toss-up", note: "Cook Political Report moves Alaska after former Rep. Mary Peltola, who won statewide in 2022, enters the race against Dan Sullivan." },
   { date: "Jun 11, 2026", contest: "senate", race: "North Carolina Senate", from: "Toss-up", to: "Lean D", note: "Sabato's Crystal Ball rewards Roy Cooper's consistent polling leads over Michael Whatley." },
   { date: "Jun 11, 2026", contest: "senate", race: "Ohio Senate", from: "Lean R", to: "Toss-up", note: "Sabato's Crystal Ball: Sherrod Brown's comeback bid pulls even with Jon Husted in the special election." },
-  { date: "Late May 2026", contest: "senate", race: "Texas Senate", from: "Likely R", to: "Lean R", note: "Cook and Sabato both downgrade Republicans' hold after Ken Paxton's runoff win over John Cornyn." },
 ];
 
 // ═══ ROAD TO THE WHITE HOUSE 2028 ═══
@@ -250,10 +257,10 @@ export const BATTLEGROUNDS = [
 
 // ─ Primaires 2028 : hypothèses testées à plus de deux ans du scrutin ─
 export const PRIMARIES_2028 = {
-  note: "National primary polling, spring 2026. At this stage it mostly measures name recognition.",
+  note: "National primary polling, summer 2026 (Emerson College Polling). At this stage it mostly measures name recognition.",
   D: [
-    { name: "Gavin Newsom", detail: "Governor of California", score: 22 },
-    { name: "Pete Buttigieg", detail: "Former Transportation secretary", score: 13 },
+    { name: "Pete Buttigieg", detail: "Former Transportation secretary", score: 18 },
+    { name: "Gavin Newsom", detail: "Governor of California", score: 16 },
     { name: "Kamala Harris", detail: "Former vice president", score: 12 },
     { name: "Alexandria Ocasio-Cortez", detail: "Representative from New York", score: 11 },
     { name: "Gretchen Whitmer", detail: "Governor of Michigan", score: 6 },
@@ -273,18 +280,19 @@ export const PRIMARIES_2028 = {
 
 // ─ L'essentiel de la semaine : 4 à 5 brèves maximum, factuel. ─
 export const BRIEFING = {
-  week: "July 2 – 8, 2026",
+  week: "July 9 – 17, 2026",
   items: [
-    { title: "Ossoff opens a 13-point lead in Georgia", text: "A Fox News poll gives the Democratic incumbent a 56–43 lead over Republican nominee Mike Collins — a stunning margin in a state Trump carried in 2024." },
-    { title: "Alaska becomes a toss-up", text: "Former Rep. Mary Peltola's entry against Sen. Dan Sullivan prompted Cook Political Report to move the seat to Toss-up on July 1." },
-    { title: "Texas is officially competitive", text: "After Ken Paxton's runoff rout of John Cornyn, Cook and Sabato downgraded the seat to Lean R — and the first post-runoff poll put Democrat James Talarico ahead, 47–44." },
-    { title: "Maine's wild card", text: "Outsider Graham Platner, the surprise Democratic nominee after Janet Mills suspended her campaign, leads in early polls while his personal controversies dominate coverage." },
-    { title: "Markets move toward Democrats", text: "Polymarket now gives Democrats an 84 percent chance of taking the House; Republicans remain favored to hold the Senate, 55–45." },
+    { title: "Platner withdraws in Maine", text: "Graham Platner ended his Senate bid on July 8 after a sexual assault allegation surfaced, which he denies. Maine Democrats will pick a replacement nominee at a July 25 convention in Bangor." },
+    { title: "Cook moves four governor races toward Democrats", text: "On July 11, Cook Political Report shifted Arizona to Lean D, Ohio to Toss-up, and Oregon to Likely D, citing tightening polls and prediction-market trends." },
+    { title: "North Carolina tightens", text: "A Public Policy Polling survey (July 10-11) put Roy Cooper's lead over Michael Whatley at 48–44, down from earlier double-digit margins, as Whatley consolidates undecided Republicans." },
+    { title: "Oregon becomes an unlikely battleground", text: "A poll gave Republican Christine Drazan a 48–44 edge over Gov. Tina Kotek, prompting Cook to downgrade the race from Solid D to Likely D." },
+    { title: "Michigan settles into a two-way race", text: "Months after independent Mike Duggan ended his bid, Democratic Secretary of State Jocelyn Benson leads Republican Rep. John James by about 5 points in the governor's race." },
   ],
 };
 
 // iso (facultatif) : date exacte pour le compte à rebours "Next up"
 export const CALENDAR = [
+  { date: "Jul 25, 2026", iso: "2026-07-25", event: "Maine Democratic Party convention to name a new Senate nominee, replacing Graham Platner" },
   { date: "Aug 4, 2026", iso: "2026-08-04", event: "Primaries in Arizona, Michigan, Kansas, Missouri and Washington" },
   { date: "Aug 18, 2026", iso: "2026-08-18", event: "Primaries in Florida and Wyoming" },
   { date: "Sep 8, 2026", iso: "2026-09-08", event: "New Hampshire primaries, the last of the cycle" },

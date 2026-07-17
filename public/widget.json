@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-07-08T06:30:57.143Z",
-  "updated": "July 8, 2026",
+  "generatedAt": "2026-07-17T06:55:20.762Z",
+  "updated": "July 17, 2026",
   "midterms": {
     "date": "2026-11-03"
   },
   "approval": {
     "president": "Donald Trump",
-    "approve": 39,
+    "approve": 40,
     "disapprove": 57
   },
   "genericBallot": {
-    "D": 46,
-    "R": 42
+    "D": 48,
+    "R": 43
   },
   "controlOdds": {
     "house": {
@@ -38,16 +38,15 @@
   "governors": {
     "tossups": [
       "GA",
-      "MI",
-      "AZ",
       "WI",
-      "NV"
+      "NV",
+      "OH"
     ]
   },
-  "headline": "Ossoff opens a 13-point lead in Georgia",
+  "headline": "Platner withdraws in Maine",
   "nextEvent": {
-    "date": "Aug 4, 2026",
-    "iso": "2026-08-04",
-    "event": "Primaries in Arizona, Michigan, Kansas, Missouri and Washington"
+    "date": "Jul 25, 2026",
+    "iso": "2026-07-25",
+    "event": "Maine Democratic Party convention to name a new Senate nominee, replacing Graham Platner"
   }
 }
