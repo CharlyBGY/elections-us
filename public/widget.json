@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-07-17T06:55:20.762Z",
-  "updated": "July 17, 2026",
+  "generatedAt": "2026-08-28T13:52:34.038Z",
+  "updated": "August 28, 2026",
   "midterms": {
     "date": "2026-11-03"
   },
   "approval": {
     "president": "Donald Trump",
-    "approve": 40,
-    "disapprove": 57
+    "approve": 38,
+    "disapprove": 58
   },
   "genericBallot": {
     "D": 48,
-    "R": 43
+    "R": 42
   },
   "controlOdds": {
     "house": {
-      "D": 84,
-      "R": 16
+      "D": 88,
+      "R": 12
     },
     "senate": {
-      "D": 45,
-      "R": 55
+      "D": 51,
+      "R": 49
     }
   },
   "senate": {
@@ -29,9 +29,10 @@
       "D": 47
     },
     "tossups": [
-      "GA",
       "ME",
       "OH",
+      "TX",
+      "IA",
       "AK"
     ]
   },
@@ -43,10 +44,10 @@
       "OH"
     ]
   },
-  "headline": "Platner withdraws in Maine",
+  "headline": "The Senate is now a coin flip",
   "nextEvent": {
-    "date": "Jul 25, 2026",
-    "iso": "2026-07-25",
-    "event": "Maine Democratic Party convention to name a new Senate nominee, replacing Graham Platner"
+    "date": "Sep 8, 2026",
+    "iso": "2026-09-08",
+    "event": "New Hampshire primaries, the last of the cycle"
   }
 }
